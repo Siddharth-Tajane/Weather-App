@@ -1,0 +1,93 @@
+/* Reset and base styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb); /* Soothing background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centered app container */
+.app-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  min-height: 80vh;
+  border: 1px solid #e1e4e8;
+
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: flex-start; /* content starts from top */
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+/* Title at the top */
+h1 {
+  font-size: 2rem;
+  color: #0d6efd;
+  margin-bottom: 1rem;
+}
+
+/* Search bar at the top too */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.search-bar input {
+  flex: 1;
+  max-width: 180px;
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Buttons */
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-primary {
+  background-color: #0d6efd;
+  color: white;
+}
+
+button.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Card, loader, and error spacing */
+.weather-card,
+.loader,
+.error-text {
+  margin-top: 1rem;
+  width: 100%;
+}

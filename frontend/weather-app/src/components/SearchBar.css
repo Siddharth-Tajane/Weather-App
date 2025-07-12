@@ -1,0 +1,42 @@
+.search-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.city-input {
+  width: 100%;
+  padding-right: 2.5rem; /* Space for clear icon */
+  height: 36px; /* Reduced height */
+  font-size: 0.95rem; /* Slightly smaller font */
+  padding-left: 10px;
+}
+
+.clear-icon {
+  position: absolute;
+  top: 50%;
+  right: 6px; /* Slightly more to the right */
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #888;
+  user-select: none;
+}
+
+.clear-icon:hover {
+  color: #000;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 10px;
+}
